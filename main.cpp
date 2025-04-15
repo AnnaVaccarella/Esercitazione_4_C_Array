@@ -60,7 +60,45 @@ if (!outputFile) {
 outputFile<< fixed << setprecision(2);
 cout << fixed << setprecision(2);
 
-	
+//Stampa S e n
+outputFile << "S = " << S << ", n = " << n << "\n";
+cout << "S = " << S << ", n = " << n << "\n";
+
+//Stampa array w 
+outputFile << "w = [ ";
+cout << "w = [ ";
+for (int i = 0; i < n; ++i) {
+	outputFile << w[i] << " ";
+	cout << w[i] << " ";
+}
+outputFile << "]\n";
+cout << "]\n";
+
+//Stampa array r
+outputFile << "r = [ ";
+cout << "r = [ ";
+for (int i = 0; i < n; ++i) {
+	outputFile << r[i] << " ";
+	cout << r[i] << " ";
+}
+outputFile << "]\n";
+cout << "]\n";	
+ 
+ //Stampa rendimento totale 
+outputFile << setprecision(4);
+cout << setprecision(4);
+outputFile << "Rate of return of the portfolio: " << r_tot << "\n";
+cout << "Rate of return of the portfolio: " << r_tot << "\n";
+
+//Stampa valore finale
+outputFile << fixed << setprecision(2);
+cout << fixed << setprecision(2);
+outputFile << "V: " << V << "\n";
+cout << "V: " << V << "\n";
+
+outputFile.close();
+return 0;
+}
 	
 
 	
